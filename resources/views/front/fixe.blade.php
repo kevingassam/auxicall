@@ -99,7 +99,7 @@
                         </li>
                         <li class="dropdown-item">
                             <div class="navbar-option-item navbar-option-account">
-                                <a href="authentication.html"><i class="flaticon-user"></i></a>
+                                <a href="{{ route('login') }}"><i class="flaticon-user"></i></a>
                             </div>
                         </li>
                         <li class="dropdown-item">
@@ -160,7 +160,7 @@
                     </div>
                 </div>
                 <div class="navbar-option-item navbar-option-account mobile-hide">
-                    <a href="authentication.html"><i class="flaticon-user"></i></a>
+                    <a href="{{ route('login') }}"><i class="flaticon-user"></i></a>
                 </div>
                 <div class="navbar-option-item navbar-option-cart mobile-hide">
                     <a href="cart.html"><i class="flaticon-shopping-bag"></i>
@@ -204,7 +204,7 @@
                                         <a href="#" class="nav-link dropdown-toggle">Account</a>
                                         <ul class="dropdown-menu">
                                             <li class="nav-item">
-                                                <a href="authentication.html" class="nav-link">Authentication</a>
+                                                <a href="{{ route('login') }}" class="nav-link">Authentication</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a href="forget-password.html" class="nav-link">Forget Password</a>
@@ -355,7 +355,7 @@
                                                 <a href="privacy-policy.html">Privacy Policy</a>
                                             </li>
                                             <li>
-                                                <a href="authentication.html">Authentication</a>
+                                                <a href="{{ route('login') }}">Authentication</a>
                                             </li>
                                             <li><a href="pricing.html">Pricing</a></li>
                                         </ul>
