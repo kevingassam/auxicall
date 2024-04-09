@@ -430,7 +430,7 @@
             <div class="sidebar-modal-inner">
                 <div class="sidebar-modal-header">
                     <div class="sidebar-modal-logo">
-                        <img src="/assets-front/images/logo.png" alt="logo" />
+                        <img src="/logo-black.png" alt="logo" />
                     </div>
                     <div class="sidebar-modal-close">
                         <i class="flaticon-cross-sign"></i>
