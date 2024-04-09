@@ -244,14 +244,6 @@
                                     <img src="/assets-front/images/germany.png" alt="flag" />
                                     Deutsch
                                 </a>
-                                <a class="dropdown-item" href="#">
-                                    <img src="/assets-front/images/china.png" alt="flag" />
-                                    简体中文
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <img src="/assets-front/images/uae.png" alt="flag" />
-                                    العربيّة
-                                </a>
                             </div>
                         </div>
                         <div class="navbar-option-item navbar-option-search">
@@ -267,7 +259,9 @@
                             </form>
                         </div>
                         <div class="navbar-option-item navbar-option-account">
-                            <a href="authentication.html"><i class="flaticon-user"></i></a>
+                            <a href="{{ route('login') }}">
+                                <i class="flaticon-user"></i>
+                            </a>
                         </div>
                         <div class="navbar-option-item navbar-option-cart">
                             <a href="cart.html"><i class="flaticon-shopping-bag"></i>
@@ -302,7 +296,9 @@
                     <div class="col-sm-12 col-md-12 col-lg-4">
                         <div class="footer-content-item">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="/assets-front/images/logo.png" alt="logo" /></a>
+                                <a href="index.html">
+                                    <img src="/logo-black.png" alt="logo" />
+                                </a>
                             </div>
                             <div class="footer-details">
                                 <p>
@@ -377,8 +373,10 @@
                     <div class="footer-lower-item footer-lower-info">
                         <div class="footer-copyright-text">
                             <p>
-                                © Cysec is Proudly Owned by
-                                <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a>
+                                © {{ date('Y') }}
+                                <a href="{{ route('home') }}" target="_blank">
+                                    {{ config('add.name') }}
+                                </a>
                             </p>
                         </div>
                         <div class="footer-lower-action d-flex flex-wrap align-items-baseline">

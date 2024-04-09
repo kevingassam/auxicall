@@ -15,13 +15,17 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::get('/', [Controller::class, 'welcome'])->name("welcome");
 Route::get('/home', [Controller::class, 'welcome'])->name('home');
 Route::get('/contact', [Controller::class, 'contact'])->name('contact');
 Route::get('/services', [Controller::class, 'services'])->name('services');
 Route::get('/service/{id}', [Controller::class, 'services_details'])->name('services_details');
 Route::get('/teams', [Controller::class, 'teams'])->name('teams');
 Route::get('/about', [Controller::class, 'about'])->name('about');
+Route::get('/logout', [Controller::class, 'logout'])->name('logout');
+
+
+
 
 Route::get('/login', function () {
     return view('auth.login');
@@ -41,4 +45,4 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin/devis/{id}/print', [pdf::class, 'generate_devis']);
 });
 
-Route::get('/', [Controller::class, 'welcome'])->name("welcome");
+
