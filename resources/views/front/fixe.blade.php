@@ -99,12 +99,15 @@
                         </li>
                         <li class="dropdown-item">
                             <div class="navbar-option-item navbar-option-account">
-                                <a href="{{ route('login') }}"><i class="flaticon-user"></i></a>
+                                <a href="{{ route('login') }}">
+                                    <i class="flaticon-user"></i>
+                                </a>
                             </div>
                         </li>
                         <li class="dropdown-item">
                             <div class="navbar-option-item navbar-option-cart">
-                                <a href="{{ route('cart') }}"><i class="flaticon-shopping-bag"></i>
+                                <a href="{{ route('cart') }}">
+                                    <i class="flaticon-shopping-bag"></i>
                                     <span class="option-badge option-badge-danger">2</span>
                                 </a>
                             </div>
@@ -160,10 +163,13 @@
                     </div>
                 </div>
                 <div class="navbar-option-item navbar-option-account mobile-hide">
-                    <a href="{{ route('login') }}"><i class="flaticon-user"></i></a>
+                    <a href="{{ route('login') }}">
+                        <i class="flaticon-user"></i>
+                    </a>
                 </div>
                 <div class="navbar-option-item navbar-option-cart mobile-hide">
-                    <a href="{{ route('cart') }}"><i class="flaticon-shopping-bag"></i>
+                    <a href="{{ route('cart') }}">
+                        <i class="flaticon-shopping-bag"></i>
                         <span class="option-badge option-badge-danger">2</span>
                     </a>
                 </div>
@@ -182,7 +188,7 @@
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a href="{{ route('home') }}" class="nav-link  active">
+                                <a href="{{ route('home') }}" class="nav-link  {{ request()->routeIs('home') ? 'active' : '' }}">
                                     Accueil
                                 </a>
                             </li>
@@ -192,10 +198,14 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="{{ route('about') }}" class="nav-link">About Us</a>
+                                        <a href="{{ route('about') }}" class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}">
+                                            About Us
+                                        </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{ route('teams') }}" class="nav-link">Team</a>
+                                        <a href="{{ route('teams') }}" class="nav-link {{ request()->routeIs('teams') ? 'active' : '' }}">
+                                            Team
+                                        </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#" class="nav-link ">Shop</a>
@@ -206,23 +216,22 @@
                                             <li class="nav-item">
                                                 <a href="{{ route('login') }}" class="nav-link">Authentication</a>
                                             </li>
-                                            <li class="nav-item">
-                                                <a href="forget-password.html" class="nav-link">Forget Password</a>
-                                            </li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('services') }}" class="nav-link">
+                                <a href="{{ route('services') }}" class="nav-link {{ request()->routeIs('services') ? 'active' : '' }}">
                                     Services
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link ">Blog</a>
+                                <a href="#" class="nav-link ">
+                                    Blog
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('contact') }}" class="nav-link">
+                                <a href="{{ route('contact') }}" class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}">
                                     Contact
                                 </a>
                             </li>
