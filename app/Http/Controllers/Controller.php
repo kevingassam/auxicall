@@ -47,9 +47,8 @@ class Controller extends BaseController
             ]
         );
 
-        $categories = categories::all();
         $rescents = blogs::Orderby("id", "Desc")->limit(5)->get();
-        return view("front.blog_details", compact("article", "rescents", "categories"));
+        return view("front.blog_details", compact("article", "rescents"));
     }
 
     public function contact()
@@ -110,6 +109,7 @@ class Controller extends BaseController
         return view("front.teams");
     }
 
+  
 
     public function show_categorie_page()
     {
