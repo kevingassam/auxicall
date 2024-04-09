@@ -104,7 +104,7 @@
                         </li>
                         <li class="dropdown-item">
                             <div class="navbar-option-item navbar-option-cart">
-                                <a href="cart.html"><i class="flaticon-shopping-bag"></i>
+                                <a href="{{ route('cart') }}"><i class="flaticon-shopping-bag"></i>
                                     <span class="option-badge option-badge-danger">2</span>
                                 </a>
                             </div>
@@ -163,7 +163,7 @@
                     <a href="{{ route('login') }}"><i class="flaticon-user"></i></a>
                 </div>
                 <div class="navbar-option-item navbar-option-cart mobile-hide">
-                    <a href="cart.html"><i class="flaticon-shopping-bag"></i>
+                    <a href="{{ route('cart') }}"><i class="flaticon-shopping-bag"></i>
                         <span class="option-badge option-badge-danger">2</span>
                     </a>
                 </div>
@@ -264,7 +264,7 @@
                             </a>
                         </div>
                         <div class="navbar-option-item navbar-option-cart">
-                            <a href="cart.html"><i class="flaticon-shopping-bag"></i>
+                            <a href="{{ route('cart') }}"><i class="flaticon-shopping-bag"></i>
                                 <span class="option-badge option-badge-danger">2</span>
                             </a>
                         </div>

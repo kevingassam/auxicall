@@ -22,6 +22,8 @@ Route::get('/services', [Controller::class, 'services'])->name('services');
 Route::get('/service/{id}', [Controller::class, 'services_details'])->name('services_details');
 Route::get('/teams', [Controller::class, 'teams'])->name('teams');
 Route::get('/about', [Controller::class, 'about'])->name('about');
+Route::get('/cart', [Controller::class, 'cart'])->name('cart');
+Route::get('/checkout', [Controller::class, 'checkout'])->name('checkout');
 Route::get('/logout', [Controller::class, 'logout'])->name('logout');
 
 

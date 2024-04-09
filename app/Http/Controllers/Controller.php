@@ -77,6 +77,16 @@ class Controller extends BaseController
         return view('front.services', compact('services'));
     }
 
+
+    public function checkout(){
+        return view("front.checkout");
+    }
+
+    public function cart(){
+        return view("front.cart");
+    }
+
+
     public function services_details($id){
         $service = services::find($id);
         if(!$service){
