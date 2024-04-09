@@ -1,0 +1,10 @@
+User-agent: *
+Disallow:
+
+Disallow: /login/
+Disallow: /admin/*
+
+Crawl-delay: 10
+
+
+Sitemap: https://kevin-gassam.com/sitemap.xml
